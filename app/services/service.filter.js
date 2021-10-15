@@ -1,5 +1,8 @@
 service.filter = (function () {
     return {
+        random: function(min,max){
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        },
         isValidPhoneNumber: function (str) {
             str = str.replace(/[^0-9]/g, '');
             if (str.length < 10) return false;

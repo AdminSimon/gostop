@@ -1,0 +1,3 @@
+comp.me = (function(){
+    return {};
+})();

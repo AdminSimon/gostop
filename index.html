@@ -50,6 +50,8 @@
 
     <!-- Comp -->
     <link rel="stylesheet" href="app/comp/header/header.css?rel=v148" />
+    <link rel="stylesheet" href="app/comp/me/me.css?rel=v148" />
+    <link rel="stylesheet" href="app/comp/other/other.css?rel=v148" />
 
     <!-- Scene -->
     <link rel="stylesheet" href="app/scene/main/main.css?rel=v148" />
@@ -244,19 +246,131 @@
         <div id="main" class="scene">
             <div class="content">
                 
-                <ul class="list">
+                <ul class="list"></ul>
 
 
-                    <li class="i-card">
-                        <div class="item">
-                            <div class="card-image" style="background-image: url(img/card/img-card1.png)"></div>
-                            <div class="debug-info">
-                                <div class="number"></div>
+                <!-- 상대편 -->
+                <div id="other" class="desk">
+                    <div class="point-cards">
+                        <ul class="point-cards-list"></ul>
+                    </div>
+                    <div class="takes-cards">
+                        <ul class="takes-cards-list">
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                        </ul>
+                    </div>                    
+                </div>
+
+                <div class="main-desk">
+                    <div class="open-cards">
+                        <div class="i-card-open"></div>
+                        <div class="i-card-open"></div>
+                        <div class="i-card-open"></div>
+                        <div class="i-card-open"></div>
+                    </div>
+                    <div class="close-cards">
+                        <div class="i-card-close"></div>
+                    </div>
+                    <div class="open-cards">
+                        <div class="i-card-open"></div>
+                        <div class="i-card-open"></div>
+                        <div class="i-card-open"></div>
+                        <div class="i-card-open"></div>
+                    </div>
+                </div>
+
+                <!-- 나 -->
+                <div id="me" class="desk">
+                    <div class="point-cards">
+                        <div class="light-wrapper">
+                            <div class="dup-list">
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
                             </div>
                         </div>
-                    </li>
+                        <div class="animal-wrapper">
 
-                </ul>
+                            <div class="dup-list">
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                            </div>
+
+                        </div>
+                        <div class="line-wrapper">
+                            <div class="dup-list">
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                            </div>
+                        </div>
+                        <div class="point-wrapper">
+                            <div class="dup-list">
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                                <div class="dup-wrapper"><div class="i-card"><div class="item"></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="takes-cards">
+                        <ul class="takes-cards-list">
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                            <div class="i-card"><div class="item"></div></div>
+                        </ul>
+                    </div>                    
+                </div>
+
+
 
             </div>
         </div>
@@ -281,8 +395,13 @@
     <!-- Popup -->
     <script type="text/javascript" src="app/popup/request/request.js?rel=v148"></script>
 
+    <!-- item -->
+    <script type="text/javascript" src="app/item/item.card.js?rel=v148"></script>
+
     <!-- Comp -->
     <script type="text/javascript" src="app/comp/header/header.js?rel=v148"></script>
+    <script type="text/javascript" src="app/comp/me/me.js?rel=v148"></script>
+    <script type="text/javascript" src="app/comp/other/other.js?rel=v148"></script>
 
     <!-- Scene -->
     <script type="text/javascript" src="app/scene.js?rel=v148"></script>

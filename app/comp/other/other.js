@@ -1,0 +1,3 @@
+comp.other = (function(){
+    return {};
+})();

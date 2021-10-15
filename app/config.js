@@ -5,6 +5,7 @@ var popup = {}
 var service = {}
 var loader = {}
 var sections = {}
+var $item = {}
 
 var $DEV = true;
 var $APP_VERSION = '1.0.1';
