@@ -1,0 +1,351 @@
+#request {}
+
+#request .popup-backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+#request .popup-content {
+    background-color: #F4F4F4;
+    /* height: 760px; */
+    padding: 60px 36px 100px 36px;
+    overflow: hidden;
+    border-radius: 0;
+    width: 550px;
+}
+
+
+
+#request .popup-content .exit {
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+}
+
+#request .popup-content .tit {    
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #C5A968;
+    
+}
+
+#request .popup-content .tit > .logo-txt{
+    font-size: 16px;
+    font-weight: 500;
+    color: #CEA37C;
+}
+#request .popup-content .tit > .txt{
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#request .popup-content .row {
+    margin: 0;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 54px;
+}
+
+
+#request .popup-content .row .lb {
+    min-width: 110px;
+    /* color: #b0b0b0; */
+    color: #666666;
+    font-size: 18px;
+}
+
+#request .popup-content .row .val {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: white;
+    color: #333333;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+#request .popup-content .row .val .split-col {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#request .popup-content .row .val .split-1 {
+    flex: 1;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+#request .popup-content .row .val .split-2 {
+    width: 65px;
+    justify-content: center;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+}
+
+#request .popup-content .row .val i {
+    color: #c59b7b;
+    /* margin-left: 6px; */
+    cursor: pointer;
+}
+
+#request .popup-content .row .val textarea.placeholder-style {
+    color: #cbcbcb;
+    font-size: 12px;
+}
+
+#request .popup-content .row .val textarea {
+    border: 0px;
+    background: white;
+    width: 100%;
+    height: 100%;
+    padding: 16px 20px;
+}
+
+#request .popup-content .row.memo {
+    height: auto;
+    align-items: flex-start;
+}
+
+#request .popup-content .row.memo .val {
+    height: auto;
+}
+
+#request .popup-content .row .val input::placeholder,
+#request .popup-content .row .val textarea::placeholder {
+    color: lightgrey;
+}
+
+
+
+
+
+
+
+
+#request .popup-content .row .val .only-txt {
+    margin-left: 18px;
+}
+
+#request .popup-content .row .val i {
+    color: #c59b7b;
+    /* margin-left: 6px; */
+    cursor: pointer;
+}
+
+#request .popup-content .row .val input {
+    border: 0px;
+    background: white;
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    padding-left: 20px;
+}
+
+
+#request .popup-content .privacy {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+#request .popup-content .privacy input {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+#request .popup-content .privacy .view {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 1px 5px;
+    /* margin-left: 10px; */
+    font-size: 10px;
+}
+
+#request .popup-content .privacy .view a {
+    color: white;
+}
+
+#request .popup-content .subs {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    opacity: 0.29;
+    margin-bottom: 26px;
+}
+
+#request .popup-content .submit:hover {
+    opacity: 0.8;
+}
+
+#request .popup-content .submit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 86px;
+    /* border: 1px solid #C5A968; */
+    border: 1px solid #CEA37C;
+    /* background: #C5A968; */
+    background-color: #CEA37C;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+
+    transition: background 0.2s ease, color 0.2s ease, opacity 0.2s;
+    cursor: pointer;
+}
+
+#request .popup-content .submit i {
+    display: none;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+#request .popup-content .submit.ready {
+    opacity: 0.5;
+}
+
+#request .popup-content .submit.ready i {
+    display: block;
+}
+
+
+
+
+
+
+#request .exit-anim:hover {
+    transform: rotate(-90deg);
+    transition-delay: 0s;
+}
+
+#request .exit-anim:hover>.top {
+    transform: rotate(90deg);
+    transition-delay: 0.23s;
+}
+
+#request .exit-anim:hover>.bottom {
+    transform: rotate(-90deg);
+    transition-delay: 0.23s;
+}
+
+#request .exit-anim {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.23s linear;
+    transition-delay: 0.23s;
+}
+
+#request .exit-anim .top {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: rotate(45deg);
+    transition: transform 0.23s ease;
+
+}
+
+#request .exit-anim .bottom {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-45deg);
+    transition: transform 0.23s ease;
+}
+
+
+
+/*******************************/
+/* 반응형 */
+/*******************************/
+
+/* 모바일 */
+@media screen and (max-width: 450px) {
+    #request .submit {
+        display: block;
+    }
+
+
+    #request .popup-content {
+        /* width: 350px; */
+        width: 96%;
+        padding-bottom: 60px;
+        padding: 30px 20px 60px 20px
+    }
+
+    #request .popup-content .exit {
+        width: 25px;
+        height: 25px;
+    }
+
+    #request .popup-content .tit {
+        font-size: 19px;
+        padding-bottom: 10px;
+    }
+
+    #request .popup-content .row {
+        height: 30px;
+    }
+
+    #request .popup-content .row .lb {
+        font-size: 16px;
+    }
+
+    #request .popup-content .row .val {
+        font-size: 16px;
+    }
+
+    #request .popup-content .submit {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    #request .popup-content .subs {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    #request .popup-content .privacy {
+        font-size: 13px;
+        margin-top: 40px;
+    }
+}
+
+
+
+/* 테블릿 */
+@media screen and (min-width: 451px) and (max-width: 1023px) {}
+
+/* PC */
+@media screen and (min-width: 1024px) {}

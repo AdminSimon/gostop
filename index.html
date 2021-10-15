@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy">
+    <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <title class="translate" data-translate="global_default_html_title">gs</title>
+
+
+    <meta name="author" content="성태경">
+    <meta name="description" content="커플고스톱">
+    <meta name="keywords" content="고스톱, 커플, 게임">
+    <!-- <link rel="canonical" href="https://s-wed.co.kr"> -->
+
+    <meta property="og:title" content="커플고스톱">
+    <meta property="og:description" content="고스톱">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+
+    <!-- iOS web app icon -->
+    <!-- <link rel="apple-touch-icon" href="favicon/icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/icon-ipad-retina.png"> -->
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/icon-16x16.png"> -->
+
+
+    <!-- library css -->
+    <script src="https://kit.fontawesome.com/76df97deef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css?rel=v148" />
+    <link rel="stylesheet" href="css/common/app.css?rel=v148" />
+    <link rel="stylesheet" href="css/common/anim.css?rel=v148" />
+    <link rel="stylesheet" href="css/common/item.css?rel=v148" />
+
+    <!-- Popup -->
+    <link rel="stylesheet" href="app/popup/request/request.css?rel=v148" />
+
+    <!-- Comp -->
+    <link rel="stylesheet" href="app/comp/header/header.css?rel=v148" />
+
+    <!-- Scene -->
+    <link rel="stylesheet" href="app/scene/main/main.css?rel=v148" />
+    <link rel="stylesheet" href="app/scene/about/about.css?rel=v148" />
+    
+
+</head>
+
+<body>
+
+    <!-- 방문요청 -->
+    <div id="request" class="popup">
+        <div class="popup-backdrop"></div>
+        <div class="popup-content">
+
+            <div class="exit exit-anim">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+
+            <div class="tit">
+                <div class="logo-txt">S wedding</div>
+                <div class="txt">문의하기</div>
+            </div>
+
+            <!-- 드레스이름 -->
+            <div class="row planner-name">
+                <div class="lb">플래너</div>
+                <div class="val">
+                    <div class="only-txt"></div>
+                </div>
+            </div>       
+            
+            <!-- 이름 -->
+            <div class="row name">
+                <div class="lb">이름</div>
+                <div class="val"><input type="text" placeholder="이름을 입력해주세요"></div>
+            </div>
+
+            <!-- 핸드폰 -->
+            <div class="row phone">
+                <div class="lb">핸드폰</div>
+                <div class="val"><input type="tel" placeholder="핸드폰 번호를 입력해주세요" maxlength="13"></div>
+            </div>
+
+            <!-- 방문예정일 -->
+            <div class="row date">
+                <div class="lb">방문예정일</div>
+                <div class="val">
+                    <div class="split-col split-1"></div>
+                    <div class="split-col split-2"><i class="fal fa-calendar-alt"></i></div>
+                </div>
+            </div>
+
+            <!-- 문의사항 -->
+            <div class="row memo">
+                <div class="lb">문의사항</div>
+                <div class="val"><textarea rows="4" placeholder="문의사항을 입력해주세요"></textarea></div>
+            </div>
+
+            <!-- 개인정보수집동의 -->
+            <div class="privacy">
+                <input type="checkbox"> 개인정보 수집 및 이용안내에 관한 내용을 확인하고 동의합니다. <div class="view"><a target="_blank" href="https://www.iniwedding.com/INIwedding/privacy.htm">보기</a></div>
+            </div>
+
+            <!-- 안내 -->
+            <div class="subs">
+                We will process personal data you have supplied in accordance with our privacy policy.<br>
+                ※ 작성해주신 내용은 비밀글로 보호됩니다.
+            </div>
+
+            <!-- 등록 -->
+            <div class="submit">
+                <span>할인견적 문자 받기</span>
+                <i class="fal fa-spin fa-spinner-third"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--
+		---------------- 
+		헤더
+		----------------
+	-->
+    <div id="header">
+        <div class="wrapper">
+            <div class="logo-wrapper">
+                <img class="logo-white" src="img/w01-logo01.png" alt="">
+                <img class="logo-color" src="img/w01-logo02.png" alt="">
+            </div>
+            <div class="routes">
+                <div class="i-route" data-scene-name="about"><div class="txt font-en">About</div></div>
+                <div class="i-route" data-scene-name="planner"><div class="txt font-en">Planner</div></div>
+                <div class="i-route active" data-scene-name="partners"><div class="txt font-en">Partners</div></div>
+                <div class="i-route" data-scene-name="contact"><div class="txt font-en">Contact</div></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="app">
+
+        <!--
+            ---------------- 
+            about
+            ----------------
+		-->
+        <div id="about" class="scene">
+            <div class="content">
+
+
+                <div class="top-wrapper">
+                    <img class="banner-scale" src="img/wa-img.jpg" alt="">
+                    <div class="txt-wrapper">
+                        <div class="tit1 font-en">About</div>
+                        <div class="tit2">S웨딩 소개</div>
+                    </div>
+                </div>
+
+                <!-- vision -->
+                <div class="vision-wrapper">
+
+                    <div class="center-2200">
+                        <img src="img/wa-logo.png" alt="">
+                        <div class="txt-wrapper">
+                            <div class="txt1 font-en">Pilosophy & Vision</div>
+                            <div class="txt2">
+                                S는 무한대를 의미합니다.<br>
+                                개개인의 역량에 제한을 두지 않고, 무한한 가능성을 이끌어내어<br>
+                                고객의 라이프 스타일에 맞춘 차별화된 웨딩플랜으로<br>
+                                가장 완벽한 웨딩데이를 만들어 드리겠습니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- service -->
+                <div class="service-wrapper">
+                    <div class="center-2200">
+
+                        <!-- card 01 -->
+                        <div class="gallery-card card01">
+                            <div class="head-tit font-en">S wedding Service</div>
+                            <div class="img-wrapper">
+                                <img src="img/wa-img01.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="tit1">세심한 진행</div>
+                                <div class="tit2">꼼곰하고 세심한 케어로 결혼준비의 시작부터 끝까지 함께합니다.</div>
+                            </div>
+                        </div>
+
+                        <!-- card 02 -->
+                        <div class="gallery-card card02">
+                            <div class="img-wrapper">
+                                <img src="img/wa-img02.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="tit1">전문적인 디렉팅</div>
+                                <div class="tit2">오랜 경력을 가진 업계 최고 전문가들이 체계적이고 전문적인<br>웨딩디렉팅을 진행해드립니다.</div>
+                            </div>
+                            <div class="effect">
+                                <img class="outer" src="img/wimg-circle02.png" alt="">
+                                <img class="inner" src="img/wimg-circle01.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- card 03 -->
+                        <div class="gallery-card card03">
+                            <div class="img-wrapper">
+                                <img src="img/wa-img03.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="tit1">높은 만족도</div>
+                                <div class="tit2">개개인에 맞는 퍼스널 웨딩플랜으로 높은 만족도를 약속드립니다.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        
+        <!--
+            ---------------- 
+            main
+            ----------------
+		-->
+        <div id="main" class="scene">
+            <div class="content">
+                
+                <ul class="list">
+
+
+                    <li class="i-card">
+                        <div class="item">
+                            <div class="card-image" style="background-image: url(img/card/img-card1.png)"></div>
+                            <div class="debug-info">
+                                <div class="number"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- External Library -->
+    <script type="text/javascript" src="app/lib/jquery.min.js?rel=v148"></script>
+    <script type="text/javascript" src="app/lib/routie.min.js?rel=v148"></script>
+
+    <!-- Config -->
+    <script type="text/javascript" src="app/config.js?rel=v148"></script>
+
+    <!-- Service -->
+    <script type="text/javascript" src="app/services/service.common.js?rel=v148"></script>
+    <script type="text/javascript" src="app/services/service.request.js?rel=v148"></script>
+    <script type="text/javascript" src="app/services/service.api.js?rel=v148"></script>
+    <script type="text/javascript" src="app/services/service.ui.js?rel=v148"></script>
+    <script type="text/javascript" src="app/services/service.filter.js?rel=v148"></script>
+
+    <!-- Popup -->
+    <script type="text/javascript" src="app/popup/request/request.js?rel=v148"></script>
+
+    <!-- Comp -->
+    <script type="text/javascript" src="app/comp/header/header.js?rel=v148"></script>
+
+    <!-- Scene -->
+    <script type="text/javascript" src="app/scene.js?rel=v148"></script>
+    <script type="text/javascript" src="app/scene/main/main.js?rel=v148"></script>
+    <script type="text/javascript" src="app/scene/about/about.js?rel=v148"></script>
+
+
+    <!-- Loader -->
+    <script type="text/javascript" src="app/loader.js?rel=v148"></script>
+
+</body>
+
+</html>
